@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoalMate - Study Streak</title>
+  <link rel="stylesheet" href="../css/streak.css" />
+</head>
+<header class="navbar">
+  <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+  <main class="container">
+    <h1>Your Study Streak</h1>
+
+    <div class="top-section">
+      <div class="card streak-card">
+        <div class="flame-icon">🔥</div>
+        <p class="streak-number">15</p>
+        <p>Day Streak</p>
+        <a href="#">Keep it going!</a>
+      </div>
+
+      <div class="card stats-card">
+        <h3>Streak Stats</h3>
+        <p>Current Week: <strong>5/7 days</strong></p>
+        <p>Longest Streak: <strong>22 days</strong></p>
+        <p>Total Active Days: <strong>45 days</strong></p>
+      </div>
+
+      <div class="card motivation-card">
+        <h3>📌 Motivation</h3>
+        <p>“Great work maintaining your streak! Consistency is the key to mastery.”</p>
+        <p>Next milestone: <strong>20 day streak</strong></p>
+      </div>
+    </div>
+
+    <div class="calendar-section">
+      <h3>📅 Last 4 Weeks</h3>
+      <div class="calendar" id="calendar"></div>
+    </div>
+  </main>
+
+  <script src="../js/streak.js"></script>
+</body>
+</html>

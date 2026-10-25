@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+  <script src="../js/admin.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <header class="navbar">
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+      <a href="../html/admin.html">Admin</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+</header>
+
+  <main class="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <div class="tabs">
+      <button class="tab active">Overview</button>
+      <button class="tab">Users</button>
+      <button class="tab">Rooms</button>
+      <button class="tab">Settings</button>
+    </div>
+
+    <div class="stats">
+      <div class="card">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="info">
+          <p>Total Users</p>
+          <h3>1,234</h3>
+          <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-door-open"></i></div>
+        <div class="info">
+          <p>Active Rooms</p>
+          <h3>156</h3>
+          <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-check-circle"></i></div>
+        <div class="info">
+          <p>Goals Completed</p>
+          <h3>3,789</h3>
+          <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recent-activity">
+      <h3>Recent Activity</h3>
+      <div class="activity-card">
+        <div class="avatar"></div>
+        <div class="activity-info">
+          <p><strong>New user registered</strong></p>
+          <span>2 hours ago</span>
+        </div>
+        <a href="#" class="view-link">View</a>
+      </div>
+      <div class="activity-card">
+        <div class="avatar"></div>
+        <div class="activity-info">
+          <p><strong>New user registered</strong></p>
+          <span>2 hours ago</span>
+        </div>
+        <a href="#" class="view-link">View</a>
+      </div>
+      <div class="activity-card">
+        <div class="avatar"></div>
+        <div class="activity-info">
+          <p><strong>New user registered</strong></p>
+          <span>2 hours ago</span>
+        </div>
+        <a href="#" class="view-link">View</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

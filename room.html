@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room Created</title>
+  <link rel="stylesheet" href="../css/create.css" />
+  <script defer src="../js/room.js"></script>
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-icon">✔</div>
+      <h2>Room Created!</h2>
+      <p>Your study room "<span id="roomNameDisplay"></span>" is ready. Share the details below with your friends.</p>
+
+      <label>Room ID</label>
+      <div class="input-wrapper">
+        <input type="text" id="roomIdDisplay" readonly>
+        <span class="icon" onclick="copyText('roomIdDisplay')">📋</span>
+      </div>
+
+      <label>Share Link</label>
+      <div class="input-wrapper">
+        <input type="text" id="shareLink" readonly>
+        <span class="icon" onclick="copyText('shareLink')">📋</span>
+      </div>
+
+      <a href="../html/enter.html">
+  <button id="enterBtn">Enter Room</button>
+</a>
+
+      <button onclick="shareRoom()">🔗 Share Room</button>
+
+      <div class="footer-text">
+        <a href="../html/create.html">Create Another Room</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

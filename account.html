@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoalMate - Your Account</title>
+  <link rel="stylesheet" href="../css/account.css" />
+  <script defer src="../js/account.js"></script>
+</head>
+<body>
+  <header class="navbar">
+ <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+
+  <div class="navbar-right">
+    <nav>
+      
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="account-page">
+    <section class="profile-card">
+      <div class="profile-pic-wrapper">
+        <img id="profile-pic" src="default-profile.jpg" alt="Profile Picture">
+        <label for="upload-input" class="camera-icon">📷</label>
+        <input type="file" id="upload-input" accept="image/*" hidden />
+      </div>
+       <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../html/account.html">Account</a>
+                    <a href="../html/goal.html">Goals</a>
+                    <a href="../html/streak.html">Streaks</a>
+                    <a href="../html/timeline.html">Timeline</a>
+                </div>
+      <h2>Alex Johnson</h2>
+      <p>alex.johnson@example.com</p>
+      <button class="edit-btn">✏ Edit Profile</button>
+    </section>
+
+    <section class="stats-achievements">
+      <div class="statistics">
+        <h3>📊 Your Statistics</h3>
+        <div class="stat-boxes">
+          <div class="stat">
+            <span>15</span>
+            <p>Day Streak</p>
+          </div>
+          <div class="stat">
+            <span>24</span>
+            <p>Completed Goals</p>
+          </div>
+          <div class="stat">
+            <span>75%</span>
+            <p>Completion Rate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3>🏅 Your Achievements</h3>
+        <ul>
+          <li>🌅 Early Bird</li>
+          <li>🎯 Weekend Warrior</li>
+          <li>🔁 Consistency King</li>
+        </ul>
+        <a href="#" class="view-more">View All Achievements</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

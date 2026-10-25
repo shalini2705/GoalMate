@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - GoalMate</title>
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to GoalMate</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-msg" style="color:red; display:none;">Invalid email</p>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value.trim().toLowerCase();
+      const adminEmail = "admin@gmail.com"; // Set your actual admin email here
+
+      // Check if it's admin
+      if (email === adminEmail) {
+        window.location.href = "../html/admin.html";
+      } else {
+        window.location.href = "../html/main.html";
+      }
+    }
+  </script>
+</body>
+</html>

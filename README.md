@@ -1,1 +1,1 @@
-# GoalMate
+# goal-mate

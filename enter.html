@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room | GoalMate</title>
+  <link rel="stylesheet" href="../css/enter.css"/>
+  <script defer src="../js/enter.js"></script>
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <div class="container">
+    <div class="room-card">
+      <h2 id="roomName">Room</h2>
+      <p class="subtitle">Collaborative learning space</p>
+      <div class="info">
+        <span>👤 1 member online</span>
+        <span>• Created just now</span>
+      </div>
+      <p class="room-id-label">Room ID</p>
+      <p class="room-id" id="roomId">ABC123</p>
+
+      <div class="progress-section">
+        <h3>Study Progress</h3>
+        <p><span id="topicsDone">0</span> of 5 topics completed</p>
+        <div class="progress-bar">
+          <div class="progress" id="progressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <h3>📅 Study Timeline: <span id="subject">react</span></h3>
+        <ul>
+          <li><strong>1. Introduction to React</strong> <span class="duration">30 minutes</span><br><small>Overview and fundamentals</small></li>
+          <li><strong>2. Core Principles of React</strong> <span class="duration">45 minutes</span><br><small>Main concepts and theories</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

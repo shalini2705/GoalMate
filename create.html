@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Room - GoalMate</title>
+  <link rel="stylesheet" href="../css/create.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="navbar">
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+  <span class="nav-icons" id="accountBtn">👤▼</span>
+  <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="../html/account.html">Account</a>
+        <a href="../html/goal.html">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+ <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+</header>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-icon"><i class="fas fa-plus"></i></div>
+      <h2>Create a Study Room</h2>
+      <p>Start a new room and invite friends to collaborate</p>
+
+      <form onsubmit="createRoom(); return false;">
+        <label for="roomName">Room Name</label>
+        <div class="input-wrapper">
+          <i class="fas fa-door-open icon"></i>
+          <input type="text" id="roomName" placeholder="Enter room name" required />
+        </div>
+
+        <label for="roomDesc">Description (Optional)</label>
+        <div class="input-wrapper">
+          <i class="fas fa-align-left icon"></i>
+          <input type="text" id="roomDesc" placeholder="What's this room for?" />
+        </div>
+
+        <button type="submit">Create Room</button>
+      </form>
+
+      <div class="footer-text">
+        Already have a room? <a href="../html/join.html">Join here</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/create.js"></script>
+</body>
+</html>

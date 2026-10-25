@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Goals</title>
+    <link rel="stylesheet" href="../css/goal.css" />
+</head>
+
+<body>
+    <header class="navbar">
+  <div class="navbar-right">
+    <nav>
+      <a href="../html/main.html">Home</a>
+      <a href="../html/join.html">Join Room</a>
+      <a href="../html/create.html">Create Room</a>
+    </nav>
+    <div class="dropdown">
+      <span class="nav-icons">👤▼</span>
+      <div class="dropdown-menu">
+        <a href="../html/account.html">Account</a>
+        <a href="#">Goals</a>
+        <a href="../html/streak.html">Streaks</a>
+        <a href="../html/timeline.html">Timeline</a>
+      </div>
+    </div>
+  </div>
+  <div class="logo">
+  <img src="../assets/images/1.jpg" alt="GoalMate Logo" />
+  
+</div>
+
+</header>
+
+    <div class="container">
+        <div class="goals-header">
+            <h1>My Goals</h1>
+            <p>Create, track, and achieve your learning objectives</p>
+        </div>
+
+        <div class="clearfix">
+            <div class="sidebar">
+                <button class="btn-add">+ Add New Goal</button>
+                <div class="filter">All Goals <span class="count">5</span></div>
+                <div class="filter">Daily <span class="count">2</span></div>
+                <div class="filter">Weekly <span class="count">2</span></div>
+                <div class="filter">Long-term <span class="count">1</span></div>
+
+                <div class="summary-box">
+                    <h4>Progress Summary</h4>
+                    <p>Completed Goals <span class="summary-value green">1/5</span></p>
+                    <p>Overall Progress <span class="summary-value purple">63%</span></p>
+                </div>
+            </div>
+
+            <div class="goal-list">
+                <div class="goal-card">
+                    <div class="goal-title">Complete Calculus Chapter 5</div>
+                    <div class="goal-meta">Finish all exercises and practice problems</div>
+                    <div class="tags">
+                        <span>daily</span>
+                        <span class="tag-priority-high">high priority</span>
+                        <span>Due: 12/30/2024</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 75%;"></div>
+                    </div>
+                    <div class="progress-percent">75%</div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-title">Read "Clean Code" Book</div>
+                    <div class="goal-meta">Read and take notes on software engineering best practices</div>
+                    <div class="tags">
+                        <span>weekly</span>
+                        <span class="tag-priority-medium">medium priority</span>
+                        <span>Due: 12/31/2024</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 45%;"></div>
+                    </div>
+                    <div class="progress-percent">45%</div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-title">Prepare for Finals</div>
+                    <div class="goal-meta">Create study schedule and review all course materials</div>
+                    <div class="tags">
+                        <span>long-term</span>
+                        <span class="tag-priority-high">high priority</span>
+                        <span>Due: 1/15/2025</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 30%;"></div>
+                    </div>
+                    <div class="progress-percent">30%</div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/goal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f6f8ff;
+  color: #333;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+header,
+.goal-card,
+.summary-box {
+  background: rgb(43, 40, 40);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #000000;
+  text-align: right;
+}
+
+.logo {
+  color: #6c47ff;
+  font-weight: 700;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  justify-content: flex-end;
+}
+
+nav a:hover {
+  color: #bb86fc;
+}
+.active {
+  color: #6da18597;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.goals-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.goals-header h1 {
+  font-size: 2rem;
+  color: #6c47ff;
+}
+
+.goals-header p {
+  color: #000000;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+}
+
+.goal-list {
+  float: right;
+  width: 70%;
+}
+
+.btn-add {
+  background: linear-gradient(to right, #24104e, #453cd1);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.filter {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: #eee;
+  font-weight: 500;
+}
+
+.count {
+  float: right;
+}
+
+.goal-card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.goal-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.goal-meta {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.tags span {
+  background: #e6e6ff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.tag-priority-high {
+  background: #ffcccc;
+  color: red;
+}
+
+.tag-priority-medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.tag-priority-low {
+  background: #d4edda;
+  color: #155724;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background: #fffefe;
+  margin-top: 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(to right, #9b6cff, #4e41ff);
+}
+
+.progress-percent {
+  float: right;
+  font-size: 0.8rem;
+  color: #6c47ff;
+}
+
+.summary-box {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.summary-value {
+  float: right;
+}
+
+.green {
+  color: rgb(255, 255, 7);
+}
+
+.purple {
+  color: #f50000;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.goal-card,
+.summary-box {
+  background: rgb(28, 27, 27);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 253, 253, 0.1);
+}
+.dropdown {
+    position: relative;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 120px;
+    
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+body::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/images/back.png') no-repeat center center/cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0c2a;
+  padding: 15px 30px;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Right part (nav + dropdown) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  order: 1; /* move to left */
+  margin-left: auto;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #eee;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #bb86fc;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-icons {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #000;
+  color:#bb86fc;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
